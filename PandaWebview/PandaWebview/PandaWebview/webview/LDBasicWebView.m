@@ -88,50 +88,6 @@
     }completion:^(BOOL finished) {
         
     }];
-    
-    NSNotificationCenter * keyboardNotiText = [NSNotificationCenter defaultCenter];
-    [keyboardNotiText addObserver:self
-                         selector:@selector(moveKeyboard:)
-                             name:UIKeyboardWillChangeFrameNotification
-                           object:nil];
-    
-    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(didKboardDisappear:) name:UIKeyboardWillHideNotification object:nil];
-}
-
-
--(void)didKboardDisappear:(NSNotification *)sender{
-    
-    CGFloat duration = [sender.userInfo[@"UIKeyboardAnimationDurationUserInfoKey"] doubleValue];
-    
-    if(_screenType == 2){
-        if (!(self.frame.size.width < self.frame.size.height)) {
-            return;
-        }
-        [UIView animateWithDuration:duration animations:^{
-            [self setTransform:CGAffineTransformMakeTranslation(0, - self.frame.size.height / 2)];
-        }];
-    }
-}
-
--(void)moveKeyboard:(NSNotification *)notification{
-    
-    if (!(self.frame.size.width < self.frame.size.height)) {
-        return;
-    }
-    NSTimeInterval duration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] intValue];
-    
-    int curve = [notification.userInfo[UIKeyboardAnimationCurveUserInfoKey] intValue];
-    
-    CGRect keyboard_frame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    CGFloat keyboard_y = keyboard_frame.origin.y;
-    CGFloat offset = kDeviceHeight - keyboard_y;
-    
-    if(_screenType == 2){
-        [UIView animateWithDuration:duration animations:^{
-            [UIView setAnimationCurve:curve];
-            [self setTransform:CGAffineTransformMakeTranslation(0, - self.frame.size.height / 2-offset)];
-        }];
-    }
 }
 
 - (void)closeViewTapped:(UITapGestureRecognizer *)sender {

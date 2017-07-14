@@ -21,7 +21,7 @@
     
     LDBasicWebView  *webview;
     LDBasicWebView  *basicWebview;
-    UITextField     *urlLabel;
+    UITextField     *urlTextField;
 }
 
 @property (nonatomic) UITapGestureRecognizer *tapGes;
@@ -40,7 +40,10 @@
     [self initVideoView];
     [self initTextField];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(openWebview:)name:@"LDSDKWebViewURL" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(openWebview:)
+                                                 name:@"LDSDKWebViewURL"
+                                               object:nil];
 }
 
 - (void)openWebview:(NSNotification *)noti {
@@ -85,7 +88,7 @@
 
 - (void)videoPlsAdTapped:(UITapGestureRecognizer *)sender {
     
-    NSString *webUrl = urlLabel.text.copy;
+    NSString *webUrl = urlTextField.text.copy;
     
     webview = [[LDBasicWebView alloc] initWithFrame:CGRectMake(0, 0, kDeviceWidth, kDeviceHeight) isFullScreen:YES screenType:1 webViewType:1 url:webUrl];
     webview.delegate = self;
@@ -95,20 +98,31 @@
 
 - (void)initTextField {
     
-    urlLabel                    = [[UITextField alloc] initWithFrame:CGRectMake(10,
+    urlTextField                    = [[UITextField alloc] initWithFrame:CGRectMake(10,
                                                                              kVideoAreaHeight + rectStatusBar - 40,
                                                                              kDeviceWidth - 20,
                                                                              30)];
-    urlLabel.backgroundColor    = [UIColor whiteColor];
-    urlLabel.font               = [UIFont systemFontOfSize:11.f];
-    urlLabel.textColor          = [UIColor grayColor];
-    urlLabel.text               = @"http://sdkcdn.videojj.com/liveos-sdk/webview.html?platformId=556c38e7ec69d5bf655a0fb2&platformUserId=81&env=test";
+    urlTextField.backgroundColor    = [UIColor whiteColor];
+    urlTextField.font               = [UIFont systemFontOfSize:11.f];
+    urlTextField.textColor          = [UIColor grayColor];
+    urlTextField.text               = @"http://sdkcdn.videojj.com/liveos-sdk/webview.html?platformId=556c38e7ec69d5bf655a0fb2&platformUserId=81&env=test";
     
-    [self.view addSubview:urlLabel];
+    [self.view addSubview:urlTextField];
 }
 
 - (void)removeBasicWebView {
     _isShow = NO;
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    if (![urlTextField isExclusiveTouch]) {
+        CGFloat duration = 0.5;
+        [UIView animateWithDuration:duration animations:^{
+            self.view.transform = CGAffineTransformIdentity;
+            [urlTextField resignFirstResponder];
+        }];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
