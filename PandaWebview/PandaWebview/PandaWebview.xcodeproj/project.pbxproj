@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9E041B01F174B85000509C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041AF1F174B85000509C5 /* main.m */; };
+		A9E041B31F174B85000509C5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041B21F174B85000509C5 /* AppDelegate.m */; };
+		A9E041B61F174B85000509C5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041B51F174B85000509C5 /* ViewController.m */; };
+		A9E041B91F174B85000509C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E041B71F174B85000509C5 /* Main.storyboard */; };
+		A9E041BB1F174B85000509C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9E041BA1F174B85000509C5 /* Assets.xcassets */; };
+		A9E041BE1F174B85000509C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E041BC1F174B85000509C5 /* LaunchScreen.storyboard */; };
+		A9E041C91F174B86000509C5 /* PandaWebviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041C81F174B86000509C5 /* PandaWebviewTests.m */; };
+		A9E041D41F174B86000509C5 /* PandaWebviewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041D31F174B86000509C5 /* PandaWebviewUITests.m */; };
+		A9E041E71F174CBA000509C5 /* LDBasicWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041E21F174CBA000509C5 /* LDBasicWebView.m */; };
+		A9E041E81F174CBA000509C5 /* LDWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041E41F174CBA000509C5 /* LDWebView.m */; };
+		A9E041E91F174CBA000509C5 /* LDWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E041E61F174CBA000509C5 /* LDWKWebView.m */; };
+		A9E041ED1F175417000509C5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041EC1F175417000509C5 /* WebKit.framework */; };
+		A9E041EF1F175439000509C5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041EE1F175439000509C5 /* Security.framework */; };
+		A9E041F11F175471000509C5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041F01F175471000509C5 /* UIKit.framework */; };
+		A9E041F31F175691000509C5 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041F21F175691000509C5 /* CoreMedia.framework */; };
+		A9E041F51F1756A0000509C5 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041F41F1756A0000509C5 /* libz.tbd */; };
+		A9E041F71F175885000509C5 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041F61F175885000509C5 /* JavaScriptCore.framework */; };
+		A9E041F91F1758B3000509C5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9E041F81F1758B3000509C5 /* AssetsLibrary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9E041C51F174B86000509C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9E041A31F174B85000509C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E041AA1F174B85000509C5;
+			remoteInfo = PandaWebview;
+		};
+		A9E041D01F174B86000509C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9E041A31F174B85000509C5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9E041AA1F174B85000509C5;
+			remoteInfo = PandaWebview;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9E041AB1F174B85000509C5 /* PandaWebview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaWebview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E041AF1F174B85000509C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9E041B11F174B85000509C5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9E041B21F174B85000509C5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9E041B41F174B85000509C5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9E041B51F174B85000509C5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9E041B81F174B85000509C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9E041BA1F174B85000509C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9E041BD1F174B85000509C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9E041BF1F174B85000509C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E041C41F174B86000509C5 /* PandaWebviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaWebviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E041C81F174B86000509C5 /* PandaWebviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandaWebviewTests.m; sourceTree = "<group>"; };
+		A9E041CA1F174B86000509C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E041CF1F174B86000509C5 /* PandaWebviewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandaWebviewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9E041D31F174B86000509C5 /* PandaWebviewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PandaWebviewUITests.m; sourceTree = "<group>"; };
+		A9E041D51F174B86000509C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9E041E11F174CBA000509C5 /* LDBasicWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDBasicWebView.h; path = webview/LDBasicWebView.h; sourceTree = "<group>"; };
+		A9E041E21F174CBA000509C5 /* LDBasicWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDBasicWebView.m; path = webview/LDBasicWebView.m; sourceTree = "<group>"; };
+		A9E041E31F174CBA000509C5 /* LDWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDWebView.h; path = webview/LDWebView.h; sourceTree = "<group>"; };
+		A9E041E41F174CBA000509C5 /* LDWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDWebView.m; path = webview/LDWebView.m; sourceTree = "<group>"; };
+		A9E041E51F174CBA000509C5 /* LDWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LDWKWebView.h; path = webview/LDWKWebView.h; sourceTree = "<group>"; };
+		A9E041E61F174CBA000509C5 /* LDWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LDWKWebView.m; path = webview/LDWKWebView.m; sourceTree = "<group>"; };
+		A9E041EC1F175417000509C5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		A9E041EE1F175439000509C5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A9E041F01F175471000509C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9E041F21F175691000509C5 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		A9E041F41F1756A0000509C5 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		A9E041F61F175885000509C5 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		A9E041F81F1758B3000509C5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E041A81F174B85000509C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E041F91F1758B3000509C5 /* AssetsLibrary.framework in Frameworks */,
+				A9E041F71F175885000509C5 /* JavaScriptCore.framework in Frameworks */,
+				A9E041F51F1756A0000509C5 /* libz.tbd in Frameworks */,
+				A9E041F31F175691000509C5 /* CoreMedia.framework in Frameworks */,
+				A9E041F11F175471000509C5 /* UIKit.framework in Frameworks */,
+				A9E041EF1F175439000509C5 /* Security.framework in Frameworks */,
+				A9E041ED1F175417000509C5 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041C11F174B86000509C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041CC1F174B86000509C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9E041A21F174B85000509C5 = {
+			isa = PBXGroup;
+			children = (
+				A9E041AD1F174B85000509C5 /* PandaWebview */,
+				A9E041C71F174B86000509C5 /* PandaWebviewTests */,
+				A9E041D21F174B86000509C5 /* PandaWebviewUITests */,
+				A9E041AC1F174B85000509C5 /* Products */,
+				A9E041EB1F175417000509C5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9E041AC1F174B85000509C5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041AB1F174B85000509C5 /* PandaWebview.app */,
+				A9E041C41F174B86000509C5 /* PandaWebviewTests.xctest */,
+				A9E041CF1F174B86000509C5 /* PandaWebviewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9E041AD1F174B85000509C5 /* PandaWebview */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041EA1F174CBF000509C5 /* webview */,
+				A9E041B11F174B85000509C5 /* AppDelegate.h */,
+				A9E041B21F174B85000509C5 /* AppDelegate.m */,
+				A9E041B41F174B85000509C5 /* ViewController.h */,
+				A9E041B51F174B85000509C5 /* ViewController.m */,
+				A9E041B71F174B85000509C5 /* Main.storyboard */,
+				A9E041BA1F174B85000509C5 /* Assets.xcassets */,
+				A9E041BC1F174B85000509C5 /* LaunchScreen.storyboard */,
+				A9E041BF1F174B85000509C5 /* Info.plist */,
+				A9E041AE1F174B85000509C5 /* Supporting Files */,
+			);
+			path = PandaWebview;
+			sourceTree = "<group>";
+		};
+		A9E041AE1F174B85000509C5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041AF1F174B85000509C5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9E041C71F174B86000509C5 /* PandaWebviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041C81F174B86000509C5 /* PandaWebviewTests.m */,
+				A9E041CA1F174B86000509C5 /* Info.plist */,
+			);
+			path = PandaWebviewTests;
+			sourceTree = "<group>";
+		};
+		A9E041D21F174B86000509C5 /* PandaWebviewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041D31F174B86000509C5 /* PandaWebviewUITests.m */,
+				A9E041D51F174B86000509C5 /* Info.plist */,
+			);
+			path = PandaWebviewUITests;
+			sourceTree = "<group>";
+		};
+		A9E041EA1F174CBF000509C5 /* webview */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041E11F174CBA000509C5 /* LDBasicWebView.h */,
+				A9E041E21F174CBA000509C5 /* LDBasicWebView.m */,
+				A9E041E31F174CBA000509C5 /* LDWebView.h */,
+				A9E041E41F174CBA000509C5 /* LDWebView.m */,
+				A9E041E51F174CBA000509C5 /* LDWKWebView.h */,
+				A9E041E61F174CBA000509C5 /* LDWKWebView.m */,
+			);
+			name = webview;
+			sourceTree = "<group>";
+		};
+		A9E041EB1F175417000509C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9E041F81F1758B3000509C5 /* AssetsLibrary.framework */,
+				A9E041F61F175885000509C5 /* JavaScriptCore.framework */,
+				A9E041F41F1756A0000509C5 /* libz.tbd */,
+				A9E041F21F175691000509C5 /* CoreMedia.framework */,
+				A9E041F01F175471000509C5 /* UIKit.framework */,
+				A9E041EE1F175439000509C5 /* Security.framework */,
+				A9E041EC1F175417000509C5 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9E041AA1F174B85000509C5 /* PandaWebview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E041D81F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebview" */;
+			buildPhases = (
+				A9E041A71F174B85000509C5 /* Sources */,
+				A9E041A81F174B85000509C5 /* Frameworks */,
+				A9E041A91F174B85000509C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PandaWebview;
+			productName = PandaWebview;
+			productReference = A9E041AB1F174B85000509C5 /* PandaWebview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9E041C31F174B86000509C5 /* PandaWebviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E041DB1F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebviewTests" */;
+			buildPhases = (
+				A9E041C01F174B86000509C5 /* Sources */,
+				A9E041C11F174B86000509C5 /* Frameworks */,
+				A9E041C21F174B86000509C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9E041C61F174B86000509C5 /* PBXTargetDependency */,
+			);
+			name = PandaWebviewTests;
+			productName = PandaWebviewTests;
+			productReference = A9E041C41F174B86000509C5 /* PandaWebviewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A9E041CE1F174B86000509C5 /* PandaWebviewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9E041DE1F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebviewUITests" */;
+			buildPhases = (
+				A9E041CB1F174B86000509C5 /* Sources */,
+				A9E041CC1F174B86000509C5 /* Frameworks */,
+				A9E041CD1F174B86000509C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9E041D11F174B86000509C5 /* PBXTargetDependency */,
+			);
+			name = PandaWebviewUITests;
+			productName = PandaWebviewUITests;
+			productReference = A9E041CF1F174B86000509C5 /* PandaWebviewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9E041A31F174B85000509C5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Bill;
+				TargetAttributes = {
+					A9E041AA1F174B85000509C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Y59HB6VK6F;
+						ProvisioningStyle = Automatic;
+					};
+					A9E041C31F174B86000509C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Y59HB6VK6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9E041AA1F174B85000509C5;
+					};
+					A9E041CE1F174B86000509C5 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Y59HB6VK6F;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9E041AA1F174B85000509C5;
+					};
+				};
+			};
+			buildConfigurationList = A9E041A61F174B85000509C5 /* Build configuration list for PBXProject "PandaWebview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9E041A21F174B85000509C5;
+			productRefGroup = A9E041AC1F174B85000509C5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9E041AA1F174B85000509C5 /* PandaWebview */,
+				A9E041C31F174B86000509C5 /* PandaWebviewTests */,
+				A9E041CE1F174B86000509C5 /* PandaWebviewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9E041A91F174B85000509C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E041BE1F174B85000509C5 /* LaunchScreen.storyboard in Resources */,
+				A9E041BB1F174B85000509C5 /* Assets.xcassets in Resources */,
+				A9E041B91F174B85000509C5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041C21F174B86000509C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041CD1F174B86000509C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9E041A71F174B85000509C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E041B61F174B85000509C5 /* ViewController.m in Sources */,
+				A9E041E91F174CBA000509C5 /* LDWKWebView.m in Sources */,
+				A9E041B31F174B85000509C5 /* AppDelegate.m in Sources */,
+				A9E041E81F174CBA000509C5 /* LDWebView.m in Sources */,
+				A9E041E71F174CBA000509C5 /* LDBasicWebView.m in Sources */,
+				A9E041B01F174B85000509C5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041C01F174B86000509C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E041C91F174B86000509C5 /* PandaWebviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9E041CB1F174B86000509C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E041D41F174B86000509C5 /* PandaWebviewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9E041C61F174B86000509C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9E041AA1F174B85000509C5 /* PandaWebview */;
+			targetProxy = A9E041C51F174B86000509C5 /* PBXContainerItemProxy */;
+		};
+		A9E041D11F174B86000509C5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9E041AA1F174B85000509C5 /* PandaWebview */;
+			targetProxy = A9E041D01F174B86000509C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9E041B71F174B85000509C5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E041B81F174B85000509C5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9E041BC1F174B85000509C5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9E041BD1F174B85000509C5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9E041D61F174B86000509C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9E041D71F174B86000509C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9E041D91F174B86000509C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A9E041DA1F174B86000509C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebview/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebview;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A9E041DC1F174B86000509C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaWebview.app/PandaWebview";
+			};
+			name = Debug;
+		};
+		A9E041DD1F174B86000509C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebviewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebviewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PandaWebview.app/PandaWebview";
+			};
+			name = Release;
+		};
+		A9E041DF1F174B86000509C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PandaWebview;
+			};
+			name = Debug;
+		};
+		A9E041E01F174B86000509C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Y59HB6VK6F;
+				INFOPLIST_FILE = PandaWebviewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.videoPls.PandaWebviewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PandaWebview;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9E041A61F174B85000509C5 /* Build configuration list for PBXProject "PandaWebview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E041D61F174B86000509C5 /* Debug */,
+				A9E041D71F174B86000509C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9E041D81F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E041D91F174B86000509C5 /* Debug */,
+				A9E041DA1F174B86000509C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9E041DB1F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E041DC1F174B86000509C5 /* Debug */,
+				A9E041DD1F174B86000509C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9E041DE1F174B86000509C5 /* Build configuration list for PBXNativeTarget "PandaWebviewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E041DF1F174B86000509C5 /* Debug */,
+				A9E041E01F174B86000509C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9E041A31F174B85000509C5 /* Project object */;
+}
